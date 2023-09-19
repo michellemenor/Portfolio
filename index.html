@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <meta charset= "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+    <title> Michelle Portfolio </title>
+
+    <style>
+        .topnav {
+            background-color: #80c2d4;
+            overflow: hidden;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration:none;
+            font-size: 18px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #0489aa;
+            color: white;
+        }
+
+        .hero-text {
+            text-align:left;
+            position: absolute;
+            top: 60%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: rgb(35, 37, 72);
+            background-color: #e0e5e7;
+            border-radius: 20px;
+            padding: 40px 40px;
+
+         }
+
+        .hero-image {
+            position: relative;
+            top: 50px;
+            left: 300px;
+            width: 60%;
+            height: auto;
+
+            
+        }
+
+         input [type=text], select, textarea{
+            width: 40%;
+            padding: 20x;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 12px;
+            resize: vertical
+         }
+
+         input[type=submit] {
+            background-color: #3a8fb9;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #3d6198;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #afd3e5;
+            padding: 10px;
+            margin-top: 200px;
+            margin-bottom: 100px;
+        }
+
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: rgb(97, 97, 143);
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+</head>
+    <div class="footer">
+        <p>Michelle's Portfolio</p>
+    </div>
+
+<body>
+    <div class = "topnav">
+        <a class = "active" href = "#home"> Home </a>
+        <a href = "#contact"> Contact </a>
+        <a href = "aboutme.html"> About Me</a>
+        <a href = "experience.html"> Experience </a>
+
+      </div>
+
+    <div class = "hero-image">
+            <img class = "hero-image" src = "girl.jpg">
+        <div class = "hero-text">
+          <h1>Hi, I'm Michelle Menor</h1>
+          <p>Software Engineering Student</p>
+          <button> Hire me </button>
+        </div>
+    </div>  
+
+    <div class = "container">
+        <h2 id ="contact" style="color:#f2f2f2">Contact</h2>
+        <form action = "action_page.php">
+            <label for = "fname"> First Name </label>
+            <input type = "text" id = "fname" name = "firstname" placeholder="Your name...">
+
+            <label for = "lname"> Last Name </label>
+            <input type = "text" id = "lname" name = "lastname" placeholder = "Your last name...">
+
+            <label for = "country"> Country </label>
+            <select id = "country" name = "country">
+                <option value = "australia"> Australia </option>
+                <option value = "canada"> Canada </option>
+                <option value = "usa"> USA </option>
+            </select>
+            <br>
+            
+            <label for = "subject"> Subject </label> <br>
+            <textarea id = "subject" name = "subject" placeholder="Write something..."></textarea>
+            <br>
+            <input type = "submit" value = "submit">
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

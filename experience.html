@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset= "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <title> Experience </title>
+
+        <style>
+            .experience{
+                padding: 20px;
+                text-align: center;
+                background-color: rgb(130, 168, 200);
+                color: rgb(72, 72, 124);
+            }
+
+            .column{
+                float:left;
+                width: 48%;
+                margin-bottom: 16px;
+                text-align: center;
+                padding: 8px 14px;
+            }
+
+            .card{
+                box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+                margin: 8px;
+            }
+
+            .container{
+                padding: 0 16px;
+            }
+
+            .container::after,.row:after{
+                content:"";
+                clear: both;
+                display: table;
+            }
+
+            .title{
+                color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class = "experience">
+            <h1 > Experience </h1>
+        </div>
+
+        <div class = "row">
+            <div class = "column">
+                <div class = "card">
+                    <div class = "container">
+                        <h2> Kumon </h2>
+                        <p class = "title"> Math and Reading Tutor </p>
+                        <p> Work Experience: 2 years </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "card">
+                    <div class = "container">
+                        <h2> Enbridge </h2>
+                        <p class = "title"> Integrity Summer Intern </p>
+                        <p> Work Experience: 2 years </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
